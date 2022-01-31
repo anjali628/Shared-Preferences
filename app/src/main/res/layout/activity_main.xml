@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:id="@+id/ll_text_view_wrapper">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_name"
+            android:layout_margin="10dp"
+            android:text="Name Displays Here"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Age Displays Here"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_edit_text_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_below="@id/ll_text_view_wrapper">
+        
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/et_name"
+            android:hint="Enter Your Name Here"
+            android:textStyle="italic"
+            >
+
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/et_age"
+            android:hint="Enter Your Age Here"
+            android:textStyle="italic"
+            >
+
+        </EditText>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_save_data"
+            android:layout_margin="10dp"
+            android:text="Save Data"
+            android:textColor="@color/white"
+            android:backgroundTint="#424141"
+            >
+
+        </Button>
+    </LinearLayout>
+
+
+</RelativeLayout>
